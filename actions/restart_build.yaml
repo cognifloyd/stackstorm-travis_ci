@@ -1,5 +1,5 @@
 name: restart_build
-runner_type: run-python
+runner_type: python-script
 description: Restart a Build
 enabled: true
 entry_point: restart_build.py

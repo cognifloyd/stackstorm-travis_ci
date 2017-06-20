@@ -1,5 +1,5 @@
 name: enable_hook
-runner_type: run-python
+runner_type: python-script
 description: Enable hook for a git repo.
 enabled: true
 entry_point: enable_hook.py

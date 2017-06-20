@@ -1,5 +1,5 @@
 name: get_repo
-runner_type: run-python
+runner_type: python-script
 description: Retrieve details for a provided repository.
 enabled: true
 entry_point: get_repo.py

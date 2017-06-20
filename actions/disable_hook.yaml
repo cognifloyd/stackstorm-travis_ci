@@ -1,5 +1,5 @@
 name: disable_hook
-runner_type: run-python
+runner_type: python-script
 description: Disable hooks for a git repo.
 enabled: true
 entry_point: disable_hook.py
