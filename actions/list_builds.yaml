@@ -1,5 +1,5 @@
 name: list_builds
-runner_type: run-python
+runner_type: python-script
 description: List details of all the available builds.
 enabled: true
 entry_point: list_builds.py
