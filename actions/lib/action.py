@@ -2,7 +2,7 @@ import httplib
 
 import requests
 
-from st2actions.runners.pythonrunner import Action
+from st2common.runners.base_action import Action
 
 API_URL = 'https://api.travis-ci.org'
 HEADER_ACCEPT = 'application/vnd.travis-ci.2+json'
