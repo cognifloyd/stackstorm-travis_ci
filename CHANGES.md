@@ -1,5 +1,9 @@
 # Change Log
 
+# 0.3.3
+
+- Minor linting change
+
 # 0.3.1
 
 - Added example configuration file
