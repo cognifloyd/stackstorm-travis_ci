@@ -1,4 +1,4 @@
-import httplib
+from six.moves import http_client
 
 import requests
 
@@ -37,7 +37,8 @@ class TravisCI(Action):
             headers = self._get_auth_headers()
             response = requests.put(url, data=data, headers=headers)
 
-        if response.status_code in [httplib.FORBIDDEN, httplib.UNAUTHORIZED]:
+        # pylint: disable=no-member
+        if response.status_code in [http_client.FORBIDDEN, http_client.UNAUTHORIZED]:
             msg = ('Invalid or missing Travis CI auth token. Make sure you have'
                    'specified valid token in the config file')
             raise Exception(msg)
